@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title>SITE</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/best.css">
+</head>
+<body>
+	<p>Loading site...</p>
+	<script type="module">
+		import init, * as wasm from '/pkg/wasm_test.js';
+		async function run() {
+			await init();
+		}
+		run();
+		window.wasm = wasm;
+	</script>
+</body>
+</html>
